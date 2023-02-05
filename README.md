@@ -42,4 +42,5 @@ Tutorial for video capturing a console over a DNS Server
    > 
    > 1935 (RTMP)
 5. Get the latest **red5-server** https://github.com/Red5/red5-server/releases
-
+   - Rename red5-server/webapps/**live** -> red5-server/webapps/**app**
+   - 
