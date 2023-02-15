@@ -1,5 +1,5 @@
 # DNSVideoCapture
-Tutorial for video capturing a console over a DNS Server
+Guide for video capturing a console over a DNS Server
 
 ## Requirements
 - A video gaming console with a built-in streaming service (such as PS4, PS5, Xbox, etc.)
