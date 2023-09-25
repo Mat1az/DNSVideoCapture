@@ -43,4 +43,19 @@ Guide for capturing video of a console over a DNS server.
    > 1935 (RTMP)
 5. Get the latest **red5-server** https://github.com/Red5/red5-server/releases
    - Rename red5-server/webapps/**live** -> red5-server/webapps/**app**
-   - 
+   - Edit red5-server/webapps/app/WEB-INF/**web.xml**
+      ```
+      <display-name>app</display-name>
+      <context-param>
+          <param-name>{your stream key}</param-name>
+          <param-value>/app</param-value>
+      </context-param>
+      ```
+   - Edit red5-server/webapps/app/WEB-INF/**red5-web.properties**
+      ```
+      webapp.contextPath=/app
+      webapp.virtualHosts=*
+      ```
+6. Launch Red5 server.
+7. Start streaming from your console.
+8. Get streaming rtmp://**{YOUR IP}**/app/**{stream key}**
